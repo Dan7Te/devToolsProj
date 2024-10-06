@@ -45,7 +45,7 @@ namespace курсовая
         private void Del_Click(object sender, RoutedEventArgs e)
         {
             var usersForRemoving = datagridtarif.SelectedItems.Cast<тариф>().ToList();
-            if (MessageBox.Show($"Вы точно хотите удалить записи в кол-ве {usersForRemoving.Count} эл-ов?", "Внимание",
+            if (MessageBox.Show($"Вы точно хотите удалить записи в кол-ве {usersForRemoving.Count} эл-ов?", "Внимание!",
                 MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 try

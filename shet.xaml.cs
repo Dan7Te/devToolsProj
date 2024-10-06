@@ -36,11 +36,11 @@ namespace курсовая
             {
                 try
                 {
-                    курсоваяEntities.GetContext().счета.RemoveRange(usersForRemoving);
-                    курсоваяEntities.GetContext().SaveChanges();
+                    КурсоваяEntities.GetContext().счета.RemoveRange(usersForRemoving);
+                    КурсоваяEntities.GetContext().SaveChanges();
                     MessageBox.Show("Данные успешно удалены");
                     datagridschet.ItemsSource =
-                    курсоваяEntities.GetContext().счета.ToList();
+                    КурсоваяEntities.GetContext().счета.ToList();
                 }
                 catch (Exception ex)
                 {
@@ -54,8 +54,8 @@ namespace курсовая
         {
             if (Visibility == Visibility.Visible)
             {
-                курсоваяEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                datagridschet.ItemsSource = курсоваяEntities.GetContext().счета.ToList();
+                КурсоваяEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                datagridschet.ItemsSource = КурсоваяEntities.GetContext().счета.ToList();
             }
         }
     }

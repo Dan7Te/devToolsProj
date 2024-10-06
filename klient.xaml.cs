@@ -28,10 +28,10 @@ namespace курсовая
         public klient()
         {
             InitializeComponent();
-            Combotarif.ItemsSource = курсоваяEntities.GetContext().тариф.ToList();
-            Combospisokdizain.ItemsSource = курсоваяEntities.GetContext().дизайн.ToList();
-            Combooffice.ItemsSource = курсоваяEntities.GetContext().офисы.ToList();
-            ComboYslovia.ItemsSource = курсоваяEntities.GetContext().условия_выпуска.ToList();
+            Combotarif.ItemsSource = КурсоваяEntities.GetContext().тариф.ToList();
+            Combospisokdizain.ItemsSource = КурсоваяEntities.GetContext().дизайн.ToList();
+            Combooffice.ItemsSource = КурсоваяEntities.GetContext().офисы.ToList();
+            ComboYslovia.ItemsSource = КурсоваяEntities.GetContext().условия_выпуска.ToList();
         }
         private string GenerateUniqueAccountNumber()
         {
@@ -52,7 +52,7 @@ namespace курсовая
         }
         private bool IsAccountExists(string accountNumber)
         {
-            return курсоваяEntities.GetContext().счета.Any(s => s.номер_счета == accountNumber);
+            return КурсоваяEntities.GetContext().счета.Any(s => s.номер_счета == accountNumber);
         }
 
         
@@ -75,19 +75,19 @@ namespace курсовая
             }
 
 
-            var maxId = курсоваяEntities.GetContext().клиент.Max(item => item.id_клиента);
+            var maxId = КурсоваяEntities.GetContext().клиент.Max(item => item.id_клиента);
             if (_currentUser.id_клиента == 0)
             {
                 _currentUser.id_клиента = maxId + 1;
             }
             else
             {
-                var client = курсоваяEntities.GetContext().клиент.Where(c => c.id_клиента == _currentUser.id_клиента).FirstOrDefault();
+                var client = КурсоваяEntities.GetContext().клиент.Where(c => c.id_клиента == _currentUser.id_клиента).FirstOrDefault();
                 client.фио = fio.Text;
                 client.пол = gender.Text;
                 client.адрес = adress.Text;
                 
-                курсоваяEntities.GetContext().SaveChanges();
+                КурсоваяEntities.GetContext().SaveChanges();
                 MessageBox.Show("Успех");
                 return;
             }
@@ -121,8 +121,8 @@ namespace курсовая
             }
             _currentUser.номер_счета = generatedAccountNumber;
 
-            курсоваяEntities.GetContext().счета.Add(_currenshet);
-            курсоваяEntities.GetContext().клиент.Add(_currentUser);
+            КурсоваяEntities.GetContext().счета.Add(_currenshet);
+            КурсоваяEntities.GetContext().клиент.Add(_currentUser);
             _newOrder.клиент_id = _currentUser.id_клиента;
 
             
@@ -138,21 +138,21 @@ namespace курсовая
 
 
 
-            var mxId = курсоваяEntities.GetContext().Заказы.Max(item => item.id);
+            var mxId = КурсоваяEntities.GetContext().Заказы.Max(item => item.id);
             if (_newOrder.id == 0)
             {
                 _newOrder.id = mxId + 1;
             }
             else
             {
-                var zakaz = курсоваяEntities.GetContext().Заказы.Where(c => c.id == _newOrder.id).FirstOrDefault();
+                var zakaz = КурсоваяEntities.GetContext().Заказы.Where(c => c.id == _newOrder.id).FirstOrDefault();
 
 
                 zakaz.тариф_id = (Combotarif.SelectedItem as тариф)?.id;
                 zakaz.дизайн_id = (Combospisokdizain.SelectedItem as дизайн)?.id;
                 zakaz.офисы_id = (Combooffice.SelectedItem as офисы)?.id;
                 zakaz.условия_выпуска_id = (ComboYslovia.SelectedItem as условия_выпуска)?.id;
-                курсоваяEntities.GetContext().SaveChanges();
+                КурсоваяEntities.GetContext().SaveChanges();
                 MessageBox.Show("Успех");
                 return;
             }
@@ -160,8 +160,8 @@ namespace курсовая
             _newOrder.дизайн_id = (Combospisokdizain.SelectedItem as дизайн)?.id;
             _newOrder.офисы_id = (Combooffice.SelectedItem as офисы)?.id;
             _newOrder.условия_выпуска_id = (ComboYslovia.SelectedItem as условия_выпуска)?.id;
-            курсоваяEntities.GetContext().Заказы.Add(_newOrder);
-            курсоваяEntities.GetContext().SaveChanges();
+            КурсоваяEntities.GetContext().Заказы.Add(_newOrder);
+            КурсоваяEntities.GetContext().SaveChanges();
         }
 
 

@@ -38,23 +38,23 @@ namespace курсовая
                 MessageBox.Show(errors.ToString());
                 return;
             }
-            var maxId = курсоваяEntities.GetContext().офисы.Max(item => item.id);
+            var maxId = КурсоваяEntities.GetContext().офисы.Max(item => item.id);
             if (_currenoffice.id == 0)
             {
                 _currenoffice.id = maxId + 1;
             }
             else
             {
-                var tar = курсоваяEntities.GetContext().офисы.Where(c => c.id == _currenoffice.id).FirstOrDefault();
+                var tar = КурсоваяEntities.GetContext().офисы.Where(c => c.id == _currenoffice.id).FirstOrDefault();
 
                 tar.офис = office.Text;
 
-                курсоваяEntities.GetContext().SaveChanges();
+                КурсоваяEntities.GetContext().SaveChanges();
                 MessageBox.Show("Успех");
                 return;
             }
-            курсоваяEntities.GetContext().офисы.Add(_currenoffice);
-            курсоваяEntities.GetContext().SaveChanges();
+            КурсоваяEntities.GetContext().офисы.Add(_currenoffice);
+            КурсоваяEntities.GetContext().SaveChanges();
 
 
         }

@@ -30,7 +30,7 @@ namespace курсовая
             if (selectedклиент != null )
                 _currentUser = selectedклиент;
             DataContext = _currentUser;
-            Combokategoria.ItemsSource = курсоваяEntities.GetContext().категория_клиента.ToList();
+            Combokategoria.ItemsSource = КурсоваяEntities.GetContext().категория_клиента.ToList();
         }
         private string GenerateUniqueAccountNumber()
         {

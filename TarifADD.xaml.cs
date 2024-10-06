@@ -39,23 +39,23 @@ namespace курсовая
                 MessageBox.Show(errors.ToString());
                 return;
             }
-            var maxId = курсоваяEntities.GetContext().тариф.Max(item => item.id);
+            var maxId = КурсоваяEntities.GetContext().тариф.Max(item => item.id);
             if (_currentarif.id == 0)
             {
                 _currentarif.id = maxId + 1;
             }
             else
             {
-                var tar= курсоваяEntities.GetContext().тариф.Where(c => c.id == _currentarif.id).FirstOrDefault();
+                var tar= КурсоваяEntities.GetContext().тариф.Where(c => c.id == _currentarif.id).FirstOrDefault();
 
                 tar.тарифы = tarif.Text;
                 
-                курсоваяEntities.GetContext().SaveChanges();
+                КурсоваяEntities.GetContext().SaveChanges();
                 MessageBox.Show("Успех");
                 return;
             }
-            курсоваяEntities.GetContext().тариф.Add(_currentarif);
-            курсоваяEntities.GetContext().SaveChanges();
+            КурсоваяEntities.GetContext().тариф.Add(_currentarif);
+            КурсоваяEntities.GetContext().SaveChanges();
 
         }
     }

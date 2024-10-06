@@ -53,7 +53,7 @@ namespace курсовая
         }
         private bool IsAccountExists(string accountNumber)
         {
-            return курсоваяEntities.GetContext().счета.Any(s => s.номер_счета == accountNumber);
+            return КурсоваяEntities.GetContext().счета.Any(s => s.номер_счета == accountNumber);
         }
        
         private string GenerateNumber()

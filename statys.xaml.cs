@@ -34,11 +34,11 @@ namespace курсовая
             {
                 try
                 {
-                    курсоваяEntities.GetContext().статус_карты.RemoveRange(usersForRemoving);
-                    курсоваяEntities.GetContext().SaveChanges();
+                    КурсоваяEntities.GetContext().статус_карты.RemoveRange(usersForRemoving);
+                    КурсоваяEntities.GetContext().SaveChanges();
                     MessageBox.Show("Данные успешно удалены");
                     datagridstatys.ItemsSource =
-                    курсоваяEntities.GetContext().статус_карты.ToList();
+                    КурсоваяEntities.GetContext().статус_карты.ToList();
                 }
                 catch (Exception ex)
                 {
@@ -64,8 +64,8 @@ namespace курсовая
         {
             if (Visibility == Visibility.Visible)
             {
-                курсоваяEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                datagridstatys.ItemsSource = курсоваяEntities.GetContext().статус_карты.ToList();
+                КурсоваяEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                datagridstatys.ItemsSource = КурсоваяEntities.GetContext().статус_карты.ToList();
             }
         }
     }

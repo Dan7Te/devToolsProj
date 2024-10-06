@@ -30,8 +30,8 @@ namespace курсовая
         {
             if (Visibility == Visibility.Visible)
             {
-                курсоваяEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                datagridtarif.ItemsSource = курсоваяEntities.GetContext().тариф.ToList();
+                КурсоваяEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                datagridtarif.ItemsSource = КурсоваяEntities.GetContext().тариф.ToList();
             }
         }
 
@@ -50,11 +50,11 @@ namespace курсовая
             {
                 try
                 {
-                    курсоваяEntities.GetContext().тариф.RemoveRange(usersForRemoving);
-                    курсоваяEntities.GetContext().SaveChanges();
+                    КурсоваяEntities.GetContext().тариф.RemoveRange(usersForRemoving);
+                    КурсоваяEntities.GetContext().SaveChanges();
                     MessageBox.Show("Данные успешно удалены");
                     datagridtarif.ItemsSource =
-                    курсоваяEntities.GetContext().тариф.ToList();
+                    КурсоваяEntities.GetContext().тариф.ToList();
                 }
                 catch (Exception ex)
                 {

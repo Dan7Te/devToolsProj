@@ -12,17 +12,17 @@
         <Grid.Background>
             <ImageBrush ImageSource="/1645029840_2-www-funnyart-club-p-krasivii-fon-dlya-teksta-odnotonnii-gradie-2.jpg"/>
         </Grid.Background>
-        <Button x:Name="checkklient"  Content="Посмотреть таблицу клиенты"  Height="53" Width="372" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22"  Click="checkklient_Click" />
-        <Button x:Name="checkKart" Content="Посмотерть таблицу Карт"  Height="53" Width="372" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{x:Null}" FontFamily="Arial" FontSize="22"  Click="checkKart_Click" Margin="10,91,0,0" />
-        <Button x:Name="checkZakaz" Content="Посмотреть таблицу Заказов"  Height="53" Width="372" VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="10,177,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22"  Click="checkZakaz_Click" />
-        <Button x:Name="checkSchet" Content="Посмотреть таблицу Счета"  Height="53" Width="372" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,335,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22"   Click="checkSchet_Click"  />
-        <Button x:Name="checkdizain" Content="Посмотреть таблицу Дизайны"  Height="53" Width="372" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,256,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22"   Click="checkdizain_Click"  />
-        <Button x:Name="checktarif" Content="Посмотреть таблицу Тарифы" HorizontalAlignment="Left" Height="53" Width="434"  Margin="423,10,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Arial" FontSize="22"   Click="checktarif_Click"  />
-        <Button x:Name="checkyslovia" Content="Посмотреть таблицу Условий выпуска"  Margin="423,91,369,526"  Height="53" Background="{x:Null}" FontFamily="Arial" FontSize="22"   Click="checkyslovia_Click"  />
-        <Button x:Name="checkkategoria" Content="Посмотреть таблицу Категорий клиентов" Margin="423,177,369,440" Height="53" Background="{x:Null}" FontFamily="Arial" FontSize="22" Click="checkkategoria_Click" />
-        <Button x:Name="checkOffice" Content="Посмотреть таблицу Офисов" HorizontalAlignment="Left" Height="53" Margin="423,256,0,361" Background="{x:Null}" FontFamily="Arial" FontSize="22" Width="428" Click="checkOffice_Click"  />
-        <Button x:Name="checkstatys" Content="Посмотреть таблицу Статусов"  HorizontalAlignment="Left" Margin="422,327,0,290"  Height="53" Background="{x:Null}" FontFamily="Arial" FontSize="22" Width="424" Click="checkstatys_Click" />
-        <Button x:Name="checkotchetTArif" Content="Отчет Тарифы" HorizontalAlignment="Left" Margin="-5,415,0,0" VerticalAlignment="Top" Height="53" RenderTransformOrigin="0.47,0.55" Width="372" FontFamily="Arial" FontSize="22"   Click="Button_Click" Background="{x:Null}">
+        <Button x:Name="checkklient"  Content="Клиенты"  Height="53" Width="245" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="74,10,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22"  Click="checkklient_Click" />
+        <Button x:Name="checkKart" Content="Карты"  Height="53" Width="245" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{x:Null}" FontFamily="Arial" FontSize="22"  Click="checkKart_Click" Margin="74,91,0,0" />
+        <Button x:Name="checkZakaz" Content="Заказы"  Height="53" Width="245" VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="74,177,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22"  Click="checkZakaz_Click" />
+        <Button x:Name="checkSchet" Content="Счета"  Height="53" Width="245" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="74,335,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22"   Click="checkSchet_Click"  />
+        <Button x:Name="checkdizain" Content="Дизайны"  Height="53" Width="245" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="74,256,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22"   Click="checkdizain_Click"  />
+        <Button x:Name="checktarif" Content="Тарифы" HorizontalAlignment="Left" Height="53" Width="245"  Margin="512,10,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Arial" FontSize="22"   Click="checktarif_Click"  />
+        <Button x:Name="checkyslovia" Content="Условия выпуска"  Margin="512,91,469,526"  Height="53" Background="{x:Null}" FontFamily="Arial" FontSize="22"   Click="checkyslovia_Click"  />
+        <Button x:Name="checkkategoria" Content="Категории клиентов" Margin="512,177,469,440" Height="53" Background="{x:Null}" FontFamily="Arial" FontSize="22" Click="checkkategoria_Click" />
+        <Button x:Name="checkOffice" Content="Офисы" HorizontalAlignment="Left" Height="53" Margin="512,256,0,361" Background="{x:Null}" FontFamily="Arial" FontSize="22" Width="245" Click="checkOffice_Click"  />
+        <Button x:Name="checkstatys" Content="Статусы"  HorizontalAlignment="Left" Margin="511,327,0,290"  Height="53" Background="{x:Null}" FontFamily="Arial" FontSize="22" Width="246" Click="checkstatys_Click" />
+        <Button x:Name="checkotchetTArif" Content="Отчет: Тарифы" HorizontalAlignment="Left" Margin="-5,415,0,0" VerticalAlignment="Top" Height="53" RenderTransformOrigin="0.47,0.55" Width="372" FontFamily="Arial" FontSize="22"   Click="Button_Click" Background="{x:Null}">
 
             <Button.RenderTransform>
                 <TransformGroup>
@@ -33,7 +33,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="checkDiz" Content="Отчет Дизайны" HorizontalAlignment="Left" Margin="407,415,0,0" VerticalAlignment="Top" Height="53" RenderTransformOrigin="0.47,0.55" Width="424" FontFamily="Arial" FontSize="22"    Background="{x:Null}" Click="checkDiz_Click">
+        <Button x:Name="checkDiz" Content="Отчет: Дизайны" HorizontalAlignment="Left" Margin="407,415,0,0" VerticalAlignment="Top" Height="53" RenderTransformOrigin="0.47,0.55" Width="424" FontFamily="Arial" FontSize="22"    Background="{x:Null}" Click="checkDiz_Click">
 
             <Button.RenderTransform>
                 <TransformGroup>

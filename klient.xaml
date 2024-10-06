@@ -11,8 +11,8 @@
 
     <Grid Margin="0,0,10,10">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="343*"/>
+            <ColumnDefinition Width="447*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="46"/>
@@ -30,21 +30,21 @@
         </Grid.Background>
         <Button x:Name="zakaz" Content="Создать заказ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="180" Margin="305,15,0,0" Background="{x:Null}" FontFamily="Arial Black" FontSize="20" Click="zakaz_Click" Grid.Row="8" Grid.ColumnSpan="2"/>
         <TextBlock x:Name="ФИО" HorizontalAlignment="Left" Margin="6,0,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Center" Height="22" Width="85" FontFamily="Arial" FontSize="20" TextAlignment="Center"/>
-        <TextBox x:Name="fio" HorizontalAlignment="Left" Margin="25,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="323" Height="30" Grid.Column="1" />
-        <TextBox x:Name="date" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="326" Height="30" Grid.Row="1" RenderTransformOrigin="0.481,-0.118" Grid.Column="1" Margin="25,0,0,0"/>
+        <TextBox x:Name="fio" HorizontalAlignment="Left" Margin="25,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="412" Height="30" Grid.Column="1" />
+        <TextBox x:Name="date" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="412" Height="30" Grid.Row="1" RenderTransformOrigin="0.481,-0.118" Grid.Column="1" Margin="25,0,0,0"/>
         <TextBlock x:Name="датарождения" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Дата Рождения" VerticalAlignment="Center" Height="27" Width="162" FontFamily="Arial" FontSize="20" Grid.Row="1" TextAlignment="Center"/>
         <TextBlock x:Name="пол" HorizontalAlignment="Left" Margin="6,0,0,0" TextWrapping="Wrap" Text="Пол" VerticalAlignment="Center" Height="24" Width="72" FontFamily="Arial" FontSize="20" Grid.Row="2" TextAlignment="Center"/>
-        <TextBox x:Name="gender"  Margin="26,0,0,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="326" Height="30" Grid.Row="2" Grid.Column="1" />
+        <TextBox x:Name="gender"  Margin="26,0,0,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="411" Height="30" Grid.Row="2" Grid.Column="1" />
         <TextBlock x:Name="dizain" HorizontalAlignment="Left" Margin="-17,17,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Дизайн" VerticalAlignment="Top" Height="20" Width="142" FontFamily="Arial" FontSize="20" TextAlignment="Center"/>
-        <ComboBox  x:Name="Combospisokdizain" SelectedItem="{Binding дизайн}"  DisplayMemberPath="дизайны" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Center" Width="328" Height="30" RenderTransformOrigin="0.48,1.735" Margin="27,0,0,0" />
+        <ComboBox  x:Name="Combospisokdizain" SelectedItem="{Binding дизайн}"  DisplayMemberPath="дизайны" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Center" Width="410" Height="30" RenderTransformOrigin="0.48,1.735" Margin="27,0,0,0" />
         <TextBlock x:Name="tarif" HorizontalAlignment="Left" Margin="17,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Тариф" VerticalAlignment="Center" FontFamily="Arial" FontSize="20" TextAlignment="Center" Height="22" Width="74"/>
         <TextBlock x:Name="yslovia" HorizontalAlignment="Left" Margin="-17,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Условия выпуска" VerticalAlignment="Center" FontFamily="Arial" FontSize="20" TextAlignment="Center" Height="22" Width="158"/>
-        <ComboBox  x:Name="Combotarif"  SelectedItem="{Binding тариф}"  DisplayMemberPath="тарифы" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Center"  Width="329" Height="30" RenderTransformOrigin="0.472,3.418"  Grid.Column="1" Margin="25,0,0,0"/>
-        <ComboBox x:Name="ComboYslovia"  SelectedItem="{Binding условия_выпуска}" DisplayMemberPath="сроки_выпуска" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Center"  Width="329" Height="30"  Margin="26,0,0,0"/>
+        <ComboBox  x:Name="Combotarif"  SelectedItem="{Binding тариф}"  DisplayMemberPath="тарифы" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Center"  Width="412" Height="30" RenderTransformOrigin="0.472,3.418"  Grid.Column="1" Margin="25,0,0,0"/>
+        <ComboBox x:Name="ComboYslovia"  SelectedItem="{Binding условия_выпуска}" DisplayMemberPath="сроки_выпуска" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Center"  Width="411" Height="30"  Margin="26,0,0,0"/>
         <TextBlock x:Name="adresstext" HorizontalAlignment="Left" Margin="17,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Адрес" VerticalAlignment="Center" FontFamily="Arial" FontSize="20" TextAlignment="Center" Height="22" Width="74"/>
-        <TextBox x:Name="adress" Margin="26,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="328" Height="30"/>
+        <TextBox x:Name="adress" Margin="26,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="411" Height="30"/>
         <TextBlock x:Name="офис" HorizontalAlignment="Left" Margin="17,4,0,0" Grid.Row="7" TextWrapping="Wrap" Text="Офис" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" TextAlignment="Center" Height="22" Width="74"/>
-        <ComboBox x:Name="Combooffice"  SelectedItem="{Binding офисы}" DisplayMemberPath="офис" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Center"  Width="329" Height="30"  Margin="26,0,0,0"/>
+        <ComboBox x:Name="Combooffice"  SelectedItem="{Binding офисы}" DisplayMemberPath="офис" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Center"  Width="411" Height="30"  Margin="26,0,0,0"/>
 
     </Grid>
 </Page>

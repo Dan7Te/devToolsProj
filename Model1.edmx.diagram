@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="931510367a274affb70a6334ce9728dc" Name="Diagram1">
+        <EntityTypeShape EntityType="Курсовая.sysdiagrams" Width="1.5" PointX="2.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.дизайн" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.Должности" Width="1.5" PointX="11.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.Жанр" Width="1.5" PointX="14" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.ЗаказчикПартнер" Width="1.5" PointX="13" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.Заказы" Width="1.5" PointX="8.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.ИнфоРазработки" Width="1.5" PointX="11" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.История" Width="1.5" PointX="15.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.карты" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.категория_клиента" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.клиент" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.КомандаРазработчиков" Width="1.5" PointX="8.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.Компания" Width="1.5" PointX="4.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.Обновления" Width="1.5" PointX="18.5" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.офисы" Width="1.5" PointX="6" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.Проекты" Width="1.5" PointX="16.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.РезультатыТестирования" Width="1.5" PointX="18.5" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.РесурсыАктивы" Width="1.5" PointX="10.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.Сотруудник" Width="1.5" PointX="14" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.статус_карты" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.СтатусЗаказчикаПартнера" Width="1.5" PointX="10.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.СтатусРазработки" Width="1.5" PointX="8.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.счета" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.тариф" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.условия_выпуска" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Курсовая.View_1" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <AssociationConnector Association="Курсовая.FK_Заказы_дизайн" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK_карты_дизайн" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__Сотруудни__ID_До__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__Проекты__ID_Жанр__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__ЗаказчикП__ID_Ст__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__История__ID_Зака__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__Заказы__офисы_id__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__Заказы__условия___4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK_Заказы_клиент1" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK_Заказы_тариф" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__ИнфоРазра__ID_Ко__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__ИнфоРазра__ID_Ст__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__Проекты__ID_Инфо__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__карты__статус_ка__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__карты__тариф_id__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK_карты_счета" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK_клиент_категория_клиента" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK_клиент_счета" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__Сотруудни__ID_Ко__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__Обновлени__ID_Пр__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="Курсовая.FK__Результат__ID_Пр__5165187F" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

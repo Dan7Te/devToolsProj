@@ -1,0 +1,30 @@
+﻿<Page x:Class="курсовая.shet"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:курсовая"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="shet" IsVisibleChanged="Page_IsVisibleChanged">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/1645029840_2-www-funnyart-club-p-krasivii-fon-dlya-teksta-odnotonnii-gradie-2.jpg"/>
+        </Grid.Background>
+        <DataGrid x:Name="datagridschet" AutoGenerateColumns="False" IsReadOnly="True"   RenderTransformOrigin="0.493,0.548"  FontFamily="Arial" Margin="149,49,138,110">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="номер счета" Binding="{Binding номер_счета}" Width="150" FontFamily="Verdana"/>
+                <DataGridTextColumn Header="валюта" Binding="{Binding валюта}" Width="150" FontFamily="Verdana"/>
+                <DataGridTextColumn Header="дата открытия счета" Binding="{Binding дата_открытия_счета}" Width="200" FontFamily="Verdana"/>
+                <DataGridTemplateColumn Width="auto">
+                    
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <Button  x:Name="Del" Content="Удалить" HorizontalAlignment="Left" Margin="85,500,0,0" VerticalAlignment="Top" Height="36" Width="108" Background="{x:Null}" FontFamily="Arial" FontSize="18" Click="Del_Click"/>
+
+
+    </Grid>
+</Page>
